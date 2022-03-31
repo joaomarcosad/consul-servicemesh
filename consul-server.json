@@ -1,12 +1,12 @@
 {
-    "bind_addr": "10.136.0.3",
+    "bind_addr": "ip local",
     "datacenter": "dc1",
-    "client_addr": "167.71.103.117",
+    "client_addr": "ip pub",
     "bootstrap_expect": 1,
     "data_dir": "/var/lib/consul",
     "server": true,
     "node_name": "server1",
-    "encrypt": "EUE+QhVArrb4JP08KQIO8OFsNvmEiFCJApuXl8c/7ZQ=",
+    "encrypt": "key",
     "encrypt_verify_incoming": true,
     "encrypt_verify_outgoing": true,
     "connect": {
