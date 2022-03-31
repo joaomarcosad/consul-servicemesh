@@ -1,0 +1,12 @@
+{
+    "retry_join": ["ip-consul-server"],
+    "bind_addr": "ip-local",
+    "data_dir": "/var/lib/consul",
+    "node_name": "auth1",
+    "encrypt": "key consul keygen",
+    "encrypt_verify_incoming": true,
+    "encrypt_verify_outgoing": true,
+    "connect": {
+        "enabled": true
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "service": {
+      "id": "redis",
+      "name": "redis",
+      "tags": ["production"],
+      "port": 6379,
+      "connect": {
+        "sidecar_service": {}
+      }
+    }
+}
