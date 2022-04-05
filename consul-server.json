@@ -1,12 +1,12 @@
 {
     "bind_addr": "ip local",
     "datacenter": "dc1",
-    "client_addr": "ip pub",
+    "client_addr": "ip public",
     "bootstrap_expect": 1,
     "data_dir": "/var/lib/consul",
     "server": true,
     "node_name": "server1",
-    "encrypt": "key",
+    "encrypt": "key consul keygen",
     "encrypt_verify_incoming": true,
     "encrypt_verify_outgoing": true,
     "connect": {
@@ -14,5 +14,10 @@
     },
     "ui_config": {
       "enabled": true
+    },
+    "acl": {
+      "enabled": true,
+      "default_policy": "allow",
+      "down_policy": "extend-cache"
     }
 }
